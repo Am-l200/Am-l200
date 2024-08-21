@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cleahd | Web Services </title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+body{
+   background-color: #030000;
+}
+.nav-bar{
+    margin: auto;
+    list-style: none;
+    background-color: rgb(32, 10, 1);
+    overflow: hidden;
+    height: 50px;
+    align-content: center;
+    border-radius: 10px;
+    
+
+}
+.nav-bar li{
+    float: left;
+    align-content: center;
+    text-transform: none;
+}
+.nav-bar li a{
+    text-decoration: none;
+    padding: 20px 15px;
+    color: #fff;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+   
+    
+}
+#container{
+    height: 85vh;
+    background-image: linear-gradient(to right bottom,
+     rgba(76, 70, 126, 0.349),
+     rgba(75, 200, 231, 0.068)),
+     url(images/hawk.jpg);
+
+}
+footer{
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    color: #fff;
+    align-content: center;
+}
+.nav-bar li a:hover{
+    background-color: black;
+    color: rgb(161, 65, 9);
+}
+.heading1{
+    margin: 282px auto 0px auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 60pt;
+    letter-spacing: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: moveleft;
+    animation-duration: 1s;
+
+
+}
+.heading2{
+    text-align: center;
+    text-transform: lowercase;
+    letter-spacing: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18pt;
+    animation: moveright;
+    animation-duration: 1s;
+    
+}
+#body{
+    margin: auto;
+    color: aqua;
+    align-content: center;
+    width:100%;
+}
+#btn{
+    margin:auto;
+    align-content: center;
+    width: 15%;
+
+}
+.btn{
+    border: #fff;
+    width: 100%;
+    margin: 60px auto;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: rgb(37, 10, 1);
+    text-shadow: 1.3px 1px 0px rgba(5, 0, 0, 1);
+    animation: moveup;
+    animation-duration: 2s;
+    animation-delay: 10ms;
+
+}
+@keyframes moveleft{
+    0%{transform: translateX(-300px);
+
+    }
+
+    80%{ transform: translateX(10px);
+
+
+    }
+    100%{ tranform:translateX(0px);
+
+    }
+
+}
+@keyframes moveright{
+    0%{transform: translateX(300px);
+
+    }
+
+    80%{ transform: translateX(-10px);
+
+
+    }
+    100%{ tranform:translateX(0px);
+
+    }
+
+    
+}
+@keyframes moveup{
+    
+    0%{transform: translateY(30px);
+
+    }
+
+    80%{ transform: translateX(-10px);
+
+
+    }
+    100%{ tranform:translateX(0px);
+
+    }
+}
+    </style>
+</head>
+<body>
+    <div id="header" >
+        <ul class="nav-bar">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </div>
+    <div id="container">
+    <br>
+    <br>
+    <div id="body">
+
+        <h1 class="heading1">cleahd</h1>
+        <h2 class="heading2">Sharp Vision, Clear Focus</h2>
+    <div id="btn">
+        <input type="button" value="Submit Your Request" class="btn">
+    </div>
+    </div>
+    </div>
+    
+    <footer class="footer">
+        &copy;2024 &amp; decline_politely
+    </footer>
+    
+</body>
+</html>
