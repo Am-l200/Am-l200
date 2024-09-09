@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color1:white;
+            --color2:rgb(51, 28, 6);
+            --minh:98vh;
+        }
+        .curtain1{
+            background-image: linear-gradient(to bottom, var(--color1) 50%, var(--color2)50%);
+        }
+        .curtain1::after{
+            content:"Watch out, This is Sticky";
+            display: block;
+            min-height: var(--minh);
+            
+        }
+        .curtain2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: sticky ;
+            mix-blend-mode: difference;
+            top:30px;
+            min-height: var(--minh);
+
+        }
+        h1{
+            color: var(--color1);
+        }
+        body{
+            color: aqua;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="curtain1">
+        <div class="curtain2">
+            <h1>THIS IS NOT TITLED, IS IT?</h1>
+        </div>
+    </div>    
+</body>
+</html>
